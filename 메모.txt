@@ -1,0 +1,9 @@
+db 초기설정법)
+create database db이름;
+create user 사용계정@아이피 identified by '비밀번호';
+grant all privileges on db이름.* to 사용계정@아이피;
+
+db 초기설정법 예시)
+create database board;
+create user root@localhost identified by 'password';
+grant all privileges on board.* to root@localhost
